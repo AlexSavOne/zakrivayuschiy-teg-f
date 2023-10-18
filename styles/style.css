@@ -151,12 +151,12 @@
 }
 
 .card__image {
+  border-block-start: 2px solid var(--main-color, #000);
+  border-block-end: 2px solid var(--main-color, #000);
   object-fit: cover;
   object-position: center;
   max-inline-size: 100%;
   aspect-ratio: 1/1;
-  border-block-start: 2px solid var(--main-color, #000);
-  border-block-end: 2px solid var(--main-color, #000);
 }
 
 .label {
@@ -278,12 +278,12 @@
 }
 
 .button__text {
+  position: relative;
+  z-index: 1;
   color: var(--btn-color);
   font-family: var(--accent-font), sans-serif;
   font-size: var(--btn-text-size);
   line-height: 90%;
-  position: relative;
-  z-index: 1;
   mix-blend-mode: difference;
 }
 
