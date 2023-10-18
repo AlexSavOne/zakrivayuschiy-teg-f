@@ -3,4 +3,62 @@
 ✦ theme-dark — класс тёмной темы
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
+__________________________________________________________
 */
+
+
+/* ---- СВЕТЛАЯ ТЕМА ---- */
+
+:root.theme-light {
+  --bg-color: #FFF;
+  --main-color: #000;
+  --wgth: 400;
+  --wgth-bold: 700;
+  --bg-img: repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px), repeating-linear-gradient(0deg, #d3d3d3 0 2px, transparent 2px 4px), linear-gradient(#e7e7e7, #1a1a1a);
+  --text-stroke: #FFF;
+  --btn-color: #FFF;
+  --heart-contour: #000;
+}
+
+@media (prefers-color-scheme: light) {
+
+  .theme-light .page {
+    --bg-color: #FFF;
+    --main-color: #000;
+    --wght: 400;
+    --wght-bold: 700;
+    --bg-img: repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px), repeating-linear-gradient(0deg, #d3d3d3 0 2px, transparent 2px 4px), linear-gradient(#e7e7e7, #1a1a1a);
+    --text-stroke: #FFF;
+    --btn-color: #FFF;
+    --heart-contour: #000;
+  }
+
+}
+
+/* ---- ТЕМНАЯ ТЕМА ---- */
+
+:root.theme-dark {
+  --bg-color: #000;
+  --main-color: #00CC14;
+  --wght: 465;
+  --wght-bold: 785;
+  --bg-img: repeating-linear-gradient(90deg, #000 0 2px, transparent 2px 4px), repeating-linear-gradient(0deg, #000 0 2px, transparent 2px 4px), linear-gradient(#007F0C, #004306);
+  --text-stroke: #000;
+  --btn-color: #00CC14;
+  --heart-contour: #00CC14;
+}
+
+@media (prefers-color-scheme: dark) {
+
+  .theme-dark .page {
+    --bg-color: #000;
+    --main-color: #00CC14;
+    --wght: 465;
+    --wght-bold: 785;
+    --bg-img: repeating-linear-gradient(90deg, #000 0 2px, transparent 2px 4px), repeating-linear-gradient(0deg, #000 0 2px, transparent 2px 4px), linear-gradient(#007F0C, #004306);
+    --text-stroke: #000;
+    --btn-color: #00CC14;
+    --heart-contour: #00CC14;
+  }
+
+}

@@ -1,1 +1,20 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+  --bg-color: #FFF;
+  --main-color: #000;
+  --main-font: 'Inter-Variable';
+  --accent-font: 'Press Start 2P';
+  --wght: 400;
+  --wght-bold: 700;
+  --mobile-wdth: 100%;
+  --text-stroke: #FFF;
+  --btn-color: #FFF;
+  --heart-contour: #000;
+  --heart-fill-color: red;
+  --card-text-size: 18px;
+  --card-title-size: 18px;
+  --btn-text-size: 14px;
+  --title-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --subtitle-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+}
