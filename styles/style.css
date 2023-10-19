@@ -155,7 +155,7 @@
   border-block-end: 2px solid var(--main-color, #000);
   object-fit: cover;
   object-position: center;
-  max-inline-size: 100%;
+  inline-size: 100%;
   aspect-ratio: 1/1;
 }
 
@@ -209,7 +209,6 @@
   text-align: center;
   background: var(--bg-color, #FFF);
   cursor: pointer;
-  min-inline-size: 335px;
   min-block-size: 55px;
 }
 
@@ -223,7 +222,6 @@
 }
 
 /* ---------- кнопка лайк ------------- */
-
 
 .card__button {
   display: flex;
@@ -251,8 +249,7 @@
   block-size: 40px;
 }
 
-.card__like-button,
-.footer__button {
+.button {
   position: relative;
   border: 2px solid var(--main-color, #000);
   color: var(--main-color, #000);
@@ -263,8 +260,7 @@
   cursor: pointer;
 }
 
-.card__like-button::after,
-.footer__button::after {
+.button::after {
   content: '';
   position: absolute;
   background-color: var(--main-color, #000);
@@ -287,16 +283,14 @@
   mix-blend-mode: difference;
 }
 
-.card__like-button:hover::after,
-.footer__button:hover::after {
+.button:hover::after {
   transform: scaleX(1);
 }
 
 .card__like-button:focus-visible {
-  box-shadow: 2px 2px 0 var(--main-color, #000);
+  box-shadow: 2px 2px 0 v ar(--main-color, #000);
   transition-duration: 0.3s;
 }
-
 
 .floppy {
   position: relative;
@@ -314,6 +308,7 @@
   .footer__floppy {
     inline-size: 28px;
   }
+
 }
 
 /* ----------- диалог --------- */
@@ -325,10 +320,16 @@
   grid-template-rows: 2fr 1fr;
   gap: 30px;
   border: 1px solid var(--main-color, #000);
-  padding: 32px clamp(42px, 50%, 32.5px);
+  padding: 31px 32px;
   background-color: var(--bg-color, #FFF);
   transition: opacity 0.3s ease-in-out;
   inline-size: clamp(341px, 50%, 357px);
+}
+
+.dialog__contain {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  gap: 20px;
 }
 
 .dialog:not([open]) {
@@ -336,18 +337,15 @@
   pointer-events: none;
 }
 
-.dialog__contain {
-  display: flex;
-  gap: 20px;
-}
-
 .dialog__floppy {
+  align-self: center;
   inline-size: 39px;
 }
 
 .dialog__text {
   color: var(--main-color, #000);
   font-family: var(--accent-font), sans-serif;
+  font-size: var(--btn-text-size);
   line-height: 150%;
   text-transform: uppercase;
 }
@@ -366,8 +364,6 @@
   opacity: 0.75;
   background: #000;
 }
-
-
 
 /* ---- анимация сердца ---- */
 
@@ -459,7 +455,7 @@
 /* ---------- фильтры ---------- */
 
 .brightness {
-  filter: brightness(190%);
+  filter: brightness(105%);
 }
 
 .sepia {
@@ -486,6 +482,6 @@
   filter: hue-rotate(90deg);
 }
 
-.hue-rotate-200 {
-  filter: hue-rotate(200deg);
+.hue-rotate-brightness {
+  filter: hue-rotate(170deg) brightness(90%);
 }
