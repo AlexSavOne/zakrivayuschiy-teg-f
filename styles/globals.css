@@ -33,6 +33,10 @@ a {
   line-height: inherit;
 }
 
+button {
+  appearance: none;
+}
+
 button,
 input {
   color: currentColor;
@@ -43,16 +47,6 @@ input {
 ul,
 ol {
   list-style: none;
-}
-
-.visually-hidden {
-  position: absolute;
-  inline-size: 1px;
-  block-size: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  white-space: nowrap;
 }
 
 a:focus,
@@ -67,4 +61,14 @@ button:focus-visible {
 
 button:disabled {
   pointer-events: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
 }

@@ -3,15 +3,15 @@
 :root {
   --bg-color: #FFF;
   --main-color: #000;
-  --main-font: 'Inter-Variable';
-  --accent-font: 'Press Start 2P';
+  --main-font: 'Inter', sans-serif;
+  --accent-font: 'Press Start 2P', fantasy;
   --wght: 400;
   --wght-bold: 700;
   --mobile-wdth: 100%;
   --text-stroke: #FFF;
   --btn-color: #FFF;
   --heart-contour: #000;
-  --heart-fill-color: red;
+  --heart-fill-color: #f00;
   --card-text-size: 18px;
   --card-title-size: 18px;
   --btn-text-size: 14px;
