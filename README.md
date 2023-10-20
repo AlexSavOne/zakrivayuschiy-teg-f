@@ -1,5 +1,5 @@
 # Проектная работа «Закрывающий тег»<br>
 ## Краткое описание:
 Это страничка с воспоминаниями об обучении **вёрстке**,в которой тренируются полученные умения из последнего спринта - использование *svg, градиентов, анимаций и плавности*<br>
-+ [Ссылка на репозиторий](https://github.com/AlexSavOne/zakrivayuschiy-teg-f)<br>
++ Ссылка на репозиторий - (https://github.com/AlexSavOne/zakrivayuschiy-teg-f)<br>
 + [Ссылка на github pages](https://alexsavone.github.io/zakrivayuschiy-teg-f/)
