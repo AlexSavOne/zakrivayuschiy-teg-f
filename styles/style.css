@@ -91,7 +91,7 @@
   inline-size: clamp(375px, 50%, 696px);
 }
 
-.card:not(:last-of-type) {
+.card_block:not(:last-of-type) {
   margin-bottom: 48px;
 }
 
@@ -130,6 +130,7 @@
 @supports(text-stroke: 1px var(--text-stroke)) or (-webkit-text-stroke: 1px var(--text-stroke)) {
 
   .label_text {
+    text-shadow: none;
     -webkit-text-stroke: 1px var(--text-stroke);
     text-stroke: 1px var(--text-stroke);
   }
@@ -146,7 +147,7 @@
   color: var(--main-color, #000);
   font-family: var(--accent-font), fantasy;
   font-size: var(--btn-text-size);
-  line-height: 90%;
+  line-height: 0.9;
   background: var(--bg-color, #FFF);
   cursor: pointer;
 }
@@ -157,7 +158,7 @@
   color: var(--btn-color);
   font-family: var(--accent-font);
   font-size: var(--btn-text-size);
-  line-height: 90%;
+  line-height: 0.9;
   mix-blend-mode: difference;
 }
 
@@ -195,7 +196,7 @@
   color: var(--main-color, #000);
   font-family: var(--accent-font), fantasy;
   font-size: var(--btn-text-size);
-  line-height: 90%;
+  line-height: 0.9;
   text-align: center;
   background: var(--bg-color, #FFF);
   cursor: pointer;
