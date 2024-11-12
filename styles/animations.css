@@ -20,6 +20,7 @@
   position: absolute;
   animation: theme-menu__button 0.5s ease-in-out infinite alternate;
   inset-inline-start: -14px;
+  inset-block-start: 0;
 }
 
 @keyframes theme-menu__button {
@@ -28,12 +29,8 @@
     inset-inline-start: -14px;
   }
 
-  50% {
-    inset-inline-start: -10px;
-  }
-
   100% {
-    inset-inline-start: -14px;
+    inset-inline-start: -10px;
   }
 }
 
